@@ -20,6 +20,8 @@ export function Contact() {
   const { t } = useLanguage()
   const [loading, setLoading] = useState(false)
 
+  const defaultValues = { name: "", email: "", message: "" }
+
   const {
     register,
     handleSubmit,
@@ -27,6 +29,9 @@ export function Contact() {
     formState: { errors },
   } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
+    mode: "onBlur",
+    reValidateMode: "onBlur",
+    defaultValues,
   })
 
   const onSubmit = async (data: FormValues) => {
@@ -41,7 +46,7 @@ export function Contact() {
       if (!res.ok) throw new Error()
 
       toast.success(t.contact.successMessage)
-      reset()
+      reset(defaultValues)
     } catch {
       toast.error(t.contact.errorMessage)
     } finally {
