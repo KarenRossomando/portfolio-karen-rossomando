@@ -2,6 +2,7 @@ import { notFound } from "next/navigation"
 import { projects } from "@/lib/projects-data"
 import { ProjectDetailContent } from "@/components/project-detail"
 import type { Metadata } from "next"
+import esTranslations from "@/lang/es.json"
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -13,25 +14,32 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params
-  const project = projects.find((p) => p.slug === slug)
+  const projectT = esTranslations.projects.items.find((p) => p.slug === slug)
 
-  if (!project) {
+  if (!projectT) {
     return { title: "Proyecto no encontrado" }
   }
 
   return {
-    title: `${project.title} | Karen Rossomando`,
-    description: project.overview.slice(0, 160),
+    title: `${projectT.title} | Karen Rossomando`,
+    description: projectT.overview.slice(0, 160),
   }
 }
 
 export default async function ProjectPage({ params }: PageProps) {
   const { slug } = await params
-  const project = projects.find((p) => p.slug === slug)
+  const base = projects.find((p) => p.slug === slug)
 
-  if (!project) {
+  if (!base) {
     notFound()
   }
 
-  return <ProjectDetailContent project={project} />
+  return (
+    <ProjectDetailContent
+      slug={base.slug}
+      color={base.color}
+      id={base.id}
+      tools={base.tools}
+    />
+  )
 }

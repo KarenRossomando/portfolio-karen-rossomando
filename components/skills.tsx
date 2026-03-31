@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Figma,
   Layout,
@@ -10,61 +12,14 @@ import {
   PenTool,
   GitBranch,
 } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
-const designSkills = [
-  {
-    name: "Figma",
-    icon: Figma,
-    description: "Diseño de interfaces, componentes y sistemas de diseño",
-  },
-  {
-    name: "Wireframing",
-    icon: Layout,
-    description: "Estructuración y planificación de flujos de usuario",
-  },
-  {
-    name: "Prototipado",
-    icon: Layers,
-    description: "Prototipos interactivos de alta y baja fidelidad",
-  },
-  {
-    name: "User Research",
-    icon: Users,
-    description: "Investigación de usuarios, entrevistas y encuestas",
-  },
-  {
-    name: "UI Design",
-    icon: PenTool,
-    description: "Diseño visual, tipografía, color y composición",
-  },
-  {
-    name: "Usability Testing",
-    icon: FileSearch,
-    description: "Evaluación heurística y pruebas de usabilidad",
-  },
-]
+const designIcons = [Figma, Layout, Layers, Users, PenTool, FileSearch]
+const techIcons = [Code, Database, FileSearch, GitBranch]
 
-const techSkills = [
-  {
-    name: "HTML / CSS",
-    icon: Code,
-    description: "Maquetado web y estilos responsivos",
-  },
-  {
-    name: "Bases de Datos",
-    icon: Database,
-    description: "Modelado relacional y consultas SQL",
-  },
-  {
-    name: "Análisis de Requerimientos",
-    icon: FileSearch,
-    description: "Relevamiento, documentación y especificación funcional",
-  },
-  {
-    name: "Diagramas UML",
-    icon: GitBranch,
-    description: "Casos de uso, diagramas de clases y secuencia",
-  },
+const tools = [
+  "Figma", "Figjam", "Adobe XD", "Notion", "Miro",
+  "Jira", "Trello", "Git", "SQL", "Draw.io",
 ]
 
 function SkillCard({
@@ -92,16 +47,18 @@ function SkillCard({
 }
 
 export function Skills() {
+  const { t } = useLanguage()
+
   return (
     <section id="habilidades" className="px-6 py-24">
       <div className="mx-auto max-w-6xl">
         {/* Section header */}
         <div className="mb-16 max-w-2xl">
           <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
-            Habilidades
+            {t.skills.label}
           </p>
           <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl text-balance">
-            Herramientas & Competencias
+            {t.skills.heading}
           </h2>
         </div>
 
@@ -109,11 +66,16 @@ export function Skills() {
           {/* Design skills */}
           <div>
             <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-              Diseño UI/UX
+              {t.skills.designLabel}
             </h3>
             <div className="grid gap-3 sm:grid-cols-2">
-              {designSkills.map((skill) => (
-                <SkillCard key={skill.name} {...skill} />
+              {t.skills.designSkills.map((skill, index) => (
+                <SkillCard
+                  key={skill.name}
+                  name={skill.name}
+                  icon={designIcons[index]}
+                  description={skill.description}
+                />
               ))}
             </div>
           </div>
@@ -121,32 +83,26 @@ export function Skills() {
           {/* Tech skills */}
           <div>
             <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-              Análisis de Sistemas
+              {t.skills.techLabel}
             </h3>
             <div className="grid gap-3 sm:grid-cols-2">
-              {techSkills.map((skill) => (
-                <SkillCard key={skill.name} {...skill} />
+              {t.skills.techSkills.map((skill, index) => (
+                <SkillCard
+                  key={skill.name}
+                  name={skill.name}
+                  icon={techIcons[index]}
+                  description={skill.description}
+                />
               ))}
             </div>
 
             {/* Tools badges */}
             <div className="mt-8">
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                Herramientas
+                {t.skills.toolsLabel}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {[
-                  "Figma",
-                  "Figjam",
-                  "Adobe XD",
-                  "Notion",
-                  "Miro",
-                  "Jira",
-                  "Trello",
-                  "Git",
-                  "SQL",
-                  "Draw.io",
-                ].map((tool) => (
+                {tools.map((tool) => (
                   <span
                     key={tool}
                     className="rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium text-card-foreground transition-colors hover:border-primary/30 hover:bg-primary/5"

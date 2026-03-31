@@ -1,20 +1,61 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Moon, Sun, ChevronDown } from "lucide-react"
+import { useTheme } from "next-themes"
+import { useLanguage } from "@/contexts/language-context"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
-const navLinks = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Sobre mí", href: "#sobre-mi" },
-  { label: "Habilidades", href: "#habilidades" },
-  { label: "Proceso", href: "#proceso" },
-  { label: "Proyectos", href: "#proyectos" },
-  { label: "Contacto", href: "#contacto" },
+const LANGUAGES = [
+  { code: "es" as const, label: "Español", flag: "🇦🇷" },
+  { code: "en" as const, label: "English", flag: "🇺🇸" },
 ]
+
+function ThemeToggle() {
+  const { resolvedTheme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) {
+    return <span className="h-5 w-5" />
+  }
+
+  return (
+    <button
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      className="flex h-8 w-8 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+      aria-label="Toggle theme"
+    >
+      {resolvedTheme === "dark" ? (
+        <Sun className="h-4 w-4" />
+      ) : (
+        <Moon className="h-4 w-4" />
+      )}
+    </button>
+  )
+}
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const { t, language, setLanguage } = useLanguage()
+
+  const navLinks = [
+    { label: t.nav.home, href: "#inicio" },
+    { label: t.nav.about, href: "#sobre-mi" },
+    { label: t.nav.skills, href: "#habilidades" },
+    { label: t.nav.process, href: "#proceso" },
+    { label: t.nav.projects, href: "#proyectos" },
+    { label: t.nav.contact, href: "#contacto" },
+  ]
+
+  const currentLang = LANGUAGES.find((l) => l.code === language) ?? LANGUAGES[0]
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40)
@@ -35,7 +76,7 @@ export function Navigation() {
           {'KR.'}
         </a>
 
-        {/* Desktop */}
+        {/* Desktop nav links */}
         <ul className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -49,14 +90,66 @@ export function Navigation() {
           ))}
         </ul>
 
-        {/* Mobile toggle */}
-        <button
-          className="text-foreground md:hidden"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
-        >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        {/* Desktop actions */}
+        <div className="hidden items-center gap-2 md:flex">
+          <ThemeToggle />
+
+          <DropdownMenu modal={false}>
+            <DropdownMenuTrigger asChild>
+              <button className="flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground">
+                <span>{currentLang.flag}</span>
+                <span className="uppercase tracking-wider text-xs">{currentLang.code}</span>
+                <ChevronDown className="h-3 w-3 opacity-60" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent side="bottom" align="end" sideOffset={6} className="min-w-[130px]">
+              {LANGUAGES.map((lang) => (
+                <DropdownMenuItem
+                  key={lang.code}
+                  onClick={() => setLanguage(lang.code)}
+                  className={language === lang.code ? "font-semibold text-primary" : ""}
+                >
+                  <span className="mr-2">{lang.flag}</span>
+                  {lang.label}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+
+        {/* Mobile actions */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+
+          <DropdownMenu modal={false}>
+            <DropdownMenuTrigger asChild>
+              <button className="flex items-center gap-1 rounded-lg px-2 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground">
+                <span>{currentLang.flag}</span>
+                <ChevronDown className="h-3 w-3 opacity-60" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent side="bottom" align="end" sideOffset={6} className="min-w-[130px]">
+              {LANGUAGES.map((lang) => (
+                <DropdownMenuItem
+                  key={lang.code}
+                  onClick={() => setLanguage(lang.code)}
+                  className={language === lang.code ? "font-semibold text-primary" : ""}
+                >
+                  <span className="mr-2">{lang.flag}</span>
+                  {lang.label}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          <button
+            className="text-foreground"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? t.nav.closeMenu : t.nav.openMenu}
+          >
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}

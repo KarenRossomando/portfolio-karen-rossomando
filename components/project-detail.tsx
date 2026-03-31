@@ -1,12 +1,23 @@
+"use client"
+
 import Link from "next/link"
 import { ArrowLeft, ExternalLink } from "lucide-react"
-import type { ProjectDetail } from "@/lib/projects-data"
+import { useLanguage } from "@/contexts/language-context"
 
 interface ProjectDetailContentProps {
-  project: ProjectDetail
+  slug: string
+  color: string
+  id: number
+  tools: string[]
 }
 
-export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
+export function ProjectDetailContent({ slug, color, id, tools }: ProjectDetailContentProps) {
+  const { t } = useLanguage()
+
+  const project = t.projects.items.find((p) => p.slug === slug)
+
+  if (!project) return null
+
   return (
     <div className="min-h-screen bg-background">
       {/* Top bar */}
@@ -17,7 +28,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
             className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
           >
             <ArrowLeft className="h-4 w-4" />
-            Volver al portfolio
+            {t.projectDetail.back}
           </Link>
           <span className="font-serif text-sm font-bold text-foreground">
             {'KR.'}
@@ -48,17 +59,17 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
 
         {/* Banner visual */}
         <div
-          className={`mb-16 flex h-48 items-center justify-center rounded-2xl sm:h-64 md:h-80 ${project.color}`}
+          className={`mb-16 flex h-48 items-center justify-center rounded-2xl sm:h-64 md:h-80 ${color}`}
         >
           <span className="font-serif text-7xl font-bold text-primary/20 sm:text-8xl md:text-9xl">
-            {String(project.id).padStart(2, "0")}
+            {String(id).padStart(2, "0")}
           </span>
         </div>
 
         {/* Overview */}
         <section className="mb-16">
           <h2 className="mb-4 font-serif text-2xl font-bold text-foreground">
-            Resumen del proyecto
+            {t.projectDetail.overview}
           </h2>
           <p className="max-w-3xl text-base leading-relaxed text-muted-foreground">
             {project.overview}
@@ -72,7 +83,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
               <span className="text-lg font-bold text-primary">{"?"}</span>
             </div>
             <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
-              El desafío
+              {t.projectDetail.challenge}
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
               {project.challenge}
@@ -83,7 +94,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
               <span className="text-lg font-bold text-accent">{"!"}</span>
             </div>
             <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
-              La solución
+              {t.projectDetail.solution}
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
               {project.solution}
@@ -94,7 +105,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
         {/* Process */}
         <section className="mb-16">
           <h2 className="mb-8 font-serif text-2xl font-bold text-foreground">
-            Proceso de diseño
+            {t.projectDetail.process}
           </h2>
           <div className="relative flex flex-col gap-8">
             {project.process.map((step, index) => (
@@ -125,10 +136,10 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
         {/* Tools used */}
         <section className="mb-16">
           <h2 className="mb-6 font-serif text-2xl font-bold text-foreground">
-            Herramientas utilizadas
+            {t.projectDetail.tools}
           </h2>
           <div className="flex flex-wrap gap-3">
-            {project.tools.map((tool) => (
+            {tools.map((tool) => (
               <span
                 key={tool}
                 className="rounded-lg border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground"
@@ -142,7 +153,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
         {/* Results */}
         <section className="mb-16">
           <h2 className="mb-6 font-serif text-2xl font-bold text-foreground">
-            Resultados destacados
+            {t.projectDetail.results}
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
             {project.results.map((result, index) => (
@@ -164,18 +175,17 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
         {/* Bottom CTA */}
         <section className="rounded-2xl border border-border bg-card p-8 text-center sm:p-12">
           <h2 className="mb-3 font-serif text-2xl font-bold text-foreground">
-            {"¿Te interesa este proyecto?"}
+            {t.projectDetail.ctaTitle}
           </h2>
           <p className="mx-auto mb-6 max-w-md text-sm leading-relaxed text-muted-foreground">
-            Si quieres saber más sobre mi proceso de diseño o colaborar en un
-            proyecto, no dudes en contactarme.
+            {t.projectDetail.ctaText}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/#contacto"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              Contactar
+              {t.projectDetail.ctaContact}
               <ExternalLink className="h-3.5 w-3.5" />
             </Link>
             <Link
@@ -183,7 +193,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
               className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
             >
               <ArrowLeft className="h-3.5 w-3.5" />
-              Ver todos los proyectos
+              {t.projectDetail.ctaBack}
             </Link>
           </div>
         </section>
@@ -191,7 +201,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
 
       {/* Footer */}
       <footer className="border-t border-border px-6 py-8 text-center text-xs text-muted-foreground">
-        Karen Rossomando &mdash; Diseñadora UI/UX & Analista de Sistemas
+        Karen Rossomando &mdash; {t.projectDetail.footerText}
       </footer>
     </div>
   )

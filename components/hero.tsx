@@ -1,8 +1,11 @@
 "use client"
 
 import { ArrowDown } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 export function Hero() {
+  const { t } = useLanguage()
+
   return (
     <section
       id="inicio"
@@ -15,7 +18,7 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
-          Diseñadora UI/UX & Analista de Sistemas
+          {t.hero.subtitle}
         </p>
 
         <h1 className="font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl text-balance">
@@ -23,14 +26,12 @@ export function Hero() {
         </h1>
 
         <p className="mx-auto mt-4 max-w-md text-lg text-muted-foreground sm:text-xl">
-          Creando experiencias digitales con{" "}
-          <span className="font-semibold text-primary">propósito</span>
+          {t.hero.tagline}{" "}
+          <span className="font-semibold text-primary">{t.hero.taglineHighlight}</span>
         </p>
 
         <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-          Combino mi formación técnica como Analista de Sistemas con mi pasión por
-          el diseño centrado en el usuario para crear interfaces intuitivas,
-          accesibles y visualmente atractivas.
+          {t.hero.description}
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -38,13 +39,13 @@ export function Hero() {
             href="#proyectos"
             className="inline-flex items-center rounded-full bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110"
           >
-            Ver Proyectos
+            {t.hero.cta}
           </a>
           <a
             href="#contacto"
             className="inline-flex items-center rounded-full border border-border px-8 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
           >
-            Contactame
+            {t.hero.ctaContact}
           </a>
         </div>
       </div>
@@ -53,9 +54,9 @@ export function Hero() {
       <a
         href="#sobre-mi"
         className="absolute bottom-10 flex flex-col items-center gap-2 text-muted-foreground transition-colors hover:text-primary"
-        aria-label="Desplazar hacia abajo"
+        aria-label={t.hero.scrollAriaLabel}
       >
-        <span className="text-xs uppercase tracking-widest">Scroll</span>
+        <span className="text-xs uppercase tracking-widest">{t.hero.scrollLabel}</span>
         <ArrowDown className="h-4 w-4 animate-bounce" />
       </a>
     </section>

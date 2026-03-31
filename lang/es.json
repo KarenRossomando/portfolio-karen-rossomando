@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "process": "Proceso",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "closeMenu": "Cerrar menú",
+    "openMenu": "Abrir menú",
+    "switchLang": "EN"
+  },
+  "hero": {
+    "subtitle": "Diseñadora UI/UX & Analista de Sistemas",
+    "tagline": "Creando experiencias digitales con",
+    "taglineHighlight": "propósito",
+    "description": "Combino mi formación técnica como Analista de Sistemas con mi pasión por el diseño centrado en el usuario para crear interfaces intuitivas, accesibles y visualmente atractivas.",
+    "cta": "Ver Proyectos",
+    "ctaContact": "Contactame",
+    "scrollLabel": "Scroll",
+    "scrollAriaLabel": "Desplazar hacia abajo"
+  },
+  "about": {
+    "label": "Sobre mí",
+    "heading": "Diseño & Tecnología, un enfoque integral",
+    "p1": "Soy una apasionada del diseño de interfaces y la experiencia de usuario. Mi camino comenzó en el mundo del análisis de sistemas, donde aprendí a entender los problemas desde su raíz y a pensar soluciones de forma estructurada.",
+    "p2": "Hoy combino esa formación técnica con mis habilidades creativas para diseñar productos digitales que no solo se ven bien, sino que funcionan de manera intuitiva y resuelven necesidades reales de los usuarios.",
+    "p3": "Actualmente me encuentro cursando el último año de la carrera de Analista de Sistemas, lo que me da una perspectiva única: puedo hablar el mismo idioma con desarrolladores y stakeholders, generando puentes entre diseño y desarrollo.",
+    "card1Title": "Formación Técnica",
+    "card1Text": "Analista de Sistemas (último año). Sólida base en lógica, bases de datos, ingeniería de software y metodologías ágiles.",
+    "card2Title": "Visión de Diseño",
+    "card2Text": "Especializada en UI/UX Design con foco en accesibilidad, design systems y experiencias centradas en el usuario."
+  },
+  "skills": {
+    "label": "Habilidades",
+    "heading": "Herramientas & Competencias",
+    "designLabel": "Diseño UI/UX",
+    "techLabel": "Análisis de Sistemas",
+    "toolsLabel": "Herramientas",
+    "designSkills": [
+      { "name": "Figma", "description": "Diseño de interfaces, componentes y sistemas de diseño" },
+      { "name": "Wireframing", "description": "Estructuración y planificación de flujos de usuario" },
+      { "name": "Prototipado", "description": "Prototipos interactivos de alta y baja fidelidad" },
+      { "name": "User Research", "description": "Investigación de usuarios, entrevistas y encuestas" },
+      { "name": "UI Design", "description": "Diseño visual, tipografía, color y composición" },
+      { "name": "Usability Testing", "description": "Evaluación heurística y pruebas de usabilidad" }
+    ],
+    "techSkills": [
+      { "name": "HTML / CSS", "description": "Maquetado web y estilos responsivos" },
+      { "name": "Bases de Datos", "description": "Modelado relacional y consultas SQL" },
+      { "name": "Análisis de Requerimientos", "description": "Relevamiento, documentación y especificación funcional" },
+      { "name": "Diagramas UML", "description": "Casos de uso, diagramas de clases y secuencia" }
+    ]
+  },
+  "process": {
+    "label": "Proceso",
+    "heading": "Mi forma de trabajar",
+    "steps": [
+      { "number": "01", "title": "Investigación", "description": "Entender el problema, los usuarios y el contexto. User research, benchmarking y análisis de requerimientos." },
+      { "number": "02", "title": "Ideación", "description": "Wireframes de baja y alta fidelidad. Definición de flujos, arquitectura de información y user flows." },
+      { "number": "03", "title": "Diseño", "description": "Prototipos interactivos en Figma. Design system, componentes reutilizables y especificaciones visuales." },
+      { "number": "04", "title": "Validación", "description": "Testing de usabilidad, iteración basada en feedback real y handoff detallado para desarrollo." }
+    ]
+  },
+  "projects": {
+    "label": "Proyectos",
+    "heading": "Trabajos seleccionados",
+    "intro": "Una selección de proyectos académicos y personales que reflejan mi proceso de diseño y mis habilidades técnicas.",
+    "viewProject": "Ver proyecto completo",
+    "items": [
+      {
+        "slug": "app-finanzas-personales",
+        "title": "App de Finanzas Personales",
+        "category": "UI/UX Design",
+        "description": "Rediseño completo de una app de gestión financiera. Investigación de usuarios, wireframes, prototipo interactivo y design system en Figma.",
+        "tags": ["Figma", "User Research", "Prototipado", "Design System"],
+        "overview": "Este proyecto consistió en el rediseño integral de una aplicación móvil de finanzas personales. El objetivo principal fue mejorar la experiencia de usuario, simplificando flujos complejos y creando una interfaz visual moderna y accesible que permita a los usuarios gestionar sus finanzas de forma intuitiva.",
+        "challenge": "La app original presentaba una navegación confusa, pantallas sobrecargadas de información y una tasa de abandono alta en el flujo de registro. Los usuarios reportaban dificultad para encontrar funciones clave como el historial de transacciones y la configuración de presupuestos.",
+        "solution": "Se realizó una reestructuración completa de la arquitectura de información, se simplificaron los flujos principales y se creó un design system consistente. Se priorizó la visualización de datos financieros con gráficos claros y se implementó un onboarding guiado para nuevos usuarios.",
+        "process": [
+          { "step": "Investigación", "description": "Entrevistas con 12 usuarios, análisis de competencia de 5 apps líderes del mercado, encuestas de satisfacción y creación de 3 user personas representativos." },
+          { "step": "Ideación", "description": "Sesiones de card sorting con usuarios reales, nueva arquitectura de información, user flows optimizados y sketches iniciales de las pantallas principales." },
+          { "step": "Diseño", "description": "Wireframes de baja y alta fidelidad en Figma, design system con componentes reutilizables, paleta de colores accesible y tipografía optimizada para lectura en dispositivos móviles." },
+          { "step": "Validación", "description": "Tests de usabilidad con 8 participantes, iteraciones basadas en feedback, prototipo interactivo final y documentación completa del design system." }
+        ],
+        "results": [
+          "Reducción del flujo de registro de 6 a 3 pasos",
+          "Arquitectura de información reorganizada con acceso directo a las 4 funciones más usadas",
+          "Design system con más de 40 componentes documentados",
+          "Prototipo interactivo de alta fidelidad con 25 pantallas"
+        ]
+      },
+      {
+        "slug": "plataforma-e-learning",
+        "title": "Plataforma E-learning",
+        "category": "UX Research + UI",
+        "description": "Diseño de plataforma educativa desde cero. Entrevistas con usuarios, mapas de empatía, wireframes y prototipo de alta fidelidad.",
+        "tags": ["Figma", "Wireframing", "UX Research", "Prototipado"],
+        "overview": "Diseño integral de una plataforma de e-learning orientada a estudiantes universitarios. El proyecto abarcó desde la investigación inicial con usuarios hasta la entrega de un prototipo de alta fidelidad, con foco en la accesibilidad y la motivación del aprendizaje continuo.",
+        "challenge": "Las plataformas educativas existentes presentaban interfaces abrumadoras, falta de personalización en las rutas de aprendizaje y baja retención de estudiantes. Se necesitaba una experiencia que motivara el aprendizaje continuo y se adaptara a diferentes estilos de estudio.",
+        "solution": "Se diseñó una plataforma con rutas de aprendizaje personalizables, un sistema de gamificación sutil para mantener la motivación, y una interfaz limpia que prioriza el contenido. Se implementó un dashboard personalizado que muestra el progreso de forma visual y celebra los logros.",
+        "process": [
+          { "step": "Investigación", "description": "Entrevistas en profundidad con 15 estudiantes universitarios, benchmark de 6 plataformas educativas, mapas de empatía y definición de 4 user personas." },
+          { "step": "Ideación", "description": "Workshop de co-creación con estudiantes, mapas de experiencia del usuario, definición de features prioritarias con metodología MoSCoW y storyboards de flujos clave." },
+          { "step": "Diseño", "description": "Wireframes iterativos, sistema de diseño con foco en accesibilidad WCAG 2.1 AA, prototipos de baja y alta fidelidad, y micro-interacciones para feedback del sistema." },
+          { "step": "Validación", "description": "Tests de usabilidad remotos con Maze, análisis de mapas de calor, iteraciones en 3 ciclos de mejora y presentación final a stakeholders." }
+        ],
+        "results": [
+          "Diseño responsive completo para desktop, tablet y móvil",
+          "Sistema de gamificación con badges y streaks de estudio",
+          "Flujo de onboarding que personaliza la experiencia en 4 pasos",
+          "Prototipo interactivo con más de 35 pantallas conectadas"
+        ]
+      },
+      {
+        "slug": "dashboard-gestion",
+        "title": "Dashboard de Gestión",
+        "category": "UI Design",
+        "description": "Interfaz de administración para sistema interno. Componentes reutilizables, responsive design y documentación de design system.",
+        "tags": ["Figma", "Design System", "Responsive", "Componentes"],
+        "overview": "Diseño de un dashboard de gestión interna para una organización que necesitaba centralizar métricas, reportes y tareas en una sola interfaz. El proyecto se centró en crear un sistema visual claro, eficiente y escalable, con un design system completo para facilitar futuras implementaciones.",
+        "challenge": "El equipo de gestión manejaba la información en múltiples hojas de cálculo y herramientas desconectadas. No existía una vista unificada de las métricas clave, lo que generaba demoras en la toma de decisiones y errores por falta de datos actualizados en tiempo real.",
+        "solution": "Se diseñó un dashboard modular con widgets configurables, visualización de datos en tiempo real, sistema de alertas inteligentes y una arquitectura de componentes escalable. Se priorizó la eficiencia en las tareas recurrentes y la personalización según el rol del usuario.",
+        "process": [
+          { "step": "Investigación", "description": "Entrevistas con 6 miembros del equipo de gestión, análisis de los workflows actuales, auditoría de herramientas existentes e identificación de pain points principales." },
+          { "step": "Ideación", "description": "Definición de métricas clave por rol, sketches de layouts modulares, definición de jerarquía de información y priorización de features con el equipo de desarrollo." },
+          { "step": "Diseño", "description": "Design system completo con componentes atómicos, gráficos y visualizaciones de datos, diseño responsive para desktop y tablet, y modos claro/oscuro." },
+          { "step": "Validación", "description": "Revisión con el equipo de desarrollo para asegurar viabilidad técnica, tests con usuarios finales, iteraciones y documentación completa en Figma." }
+        ],
+        "results": [
+          "Design system con más de 60 componentes documentados",
+          "Dashboard personalizable por rol con 4 vistas predefinidas",
+          "Sistema de visualización de datos con 8 tipos de gráficos",
+          "Documentación completa con guías de uso para el equipo de desarrollo"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contacto",
+    "heading": "¿Trabajamos juntos?",
+    "intro": "Si estás buscando una diseñadora UI/UX con visión técnica, o simplemente querés charlar sobre diseño y tecnología, no dudes en contactarme.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "emailFieldLabel": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Contame sobre tu proyecto...",
+    "submitButton": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "fieldRequired": "Este campo es obligatorio",
+    "successMessage": "¡Mensaje enviado! Me pondré en contacto pronto.",
+    "errorMessage": "Ocurrió un error. Por favor intentá de nuevo."
+  },
+  "footer": {
+    "copyright": "© 2026 — Diseñado con cariño y mucho café."
+  },
+  "projectDetail": {
+    "back": "Volver al portfolio",
+    "overview": "Resumen del proyecto",
+    "challenge": "El desafío",
+    "solution": "La solución",
+    "process": "Proceso de diseño",
+    "tools": "Herramientas utilizadas",
+    "results": "Resultados destacados",
+    "ctaTitle": "¿Te interesa este proyecto?",
+    "ctaText": "Si quieres saber más sobre mi proceso de diseño o colaborar en un proyecto, no dudes en contactarme.",
+    "ctaContact": "Contactar",
+    "ctaBack": "Ver todos los proyectos",
+    "footerText": "Diseñadora UI/UX & Analista de Sistemas"
+  }
+}
