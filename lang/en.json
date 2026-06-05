@@ -65,76 +65,24 @@
     ]
   },
   "projects": {
-    "label": "Projects",
-    "heading": "Case studies",
-    "intro": "A selection of projects demonstrating my user research process, problem definition, and user-centered design solutions.",
-    "viewProject": "View case study",
+    "label": "Case Studies",
+    "heading": "UX Case Studies",
+    "intro": "Real projects showcasing my UX research process, problem-solving approach, and user-centered design methodology.",
+    "viewProject": "View Case Study",
     "items": [
       {
-        "slug": "app-finanzas-personales",
-        "title": "Personal Finance App",
-        "category": "UX Research & Redesign",
-        "description": "Comprehensive user research that revealed critical pain points, leading to a data-driven redesign that reduced the registration flow by 50%.",
-        "tags": ["User Research", "Usability Testing", "Information Architecture", "Prototyping"],
-        "overview": "This project consisted of deep user research to understand why the original app had a high drop-off rate. Through interviews, usability testing, and data analysis, we identified root problems and designed solutions validated with real users.",
-        "challenge": "The original app had a 60% drop-off rate in the registration flow and users reported difficulty finding key features. The product team needed to understand the root causes before investing in development.",
-        "solution": "I conducted mixed-methods research (qualitative and quantitative) that revealed information architecture problems and cognitive overload. Wireframes were iteratively validated with users before moving to high fidelity, ensuring solutions addressed real needs.",
-        "process": [
-          { "step": "Discovery", "description": "12 in-depth user interviews, existing analytics analysis, benchmark of 5 competitors, and stakeholder mapping sessions." },
-          { "step": "Definition", "description": "Synthesis of 150+ insights through affinity mapping, creation of 3 data-driven personas, mapping of current and future state journey maps." },
-          { "step": "Ideation", "description": "Co-creation workshop with users, new information architecture validated with card sorting (20 participants), iterative wireframes." },
-          { "step": "Validation", "description": "Usability testing with 8 participants (94% success rate vs 45% original), 3 iteration cycles based on findings." }
-        ],
-        "results": [
-          "Registration flow reduced from 6 to 3 steps (user-validated)",
-          "Critical task success rate increased from 45% to 94%",
-          "Information architecture reorganized based on card sorting with 20 users",
-          "Complete research documentation for future improvement cycles"
-        ]
+        "slug": "sistema-turnos-medicos",
+        "title": "Sistema de Turnos Médicos",
+        "category": "UX Research & Service Design",
+        "description": "A comprehensive medical appointment system designed to streamline the patient booking experience through user research and iterative testing.",
+        "tags": ["User Research", "User Flows", "Information Architecture", "Usability Testing", "Service Design"]
       },
       {
-        "slug": "plataforma-e-learning",
-        "title": "E-learning Platform",
-        "category": "UX Research & Design",
-        "description": "Generative research with university students that informed the design of an educational platform with personalized learning paths.",
-        "tags": ["Generative Research", "User Interviews", "Journey Mapping", "Prototyping"],
-        "overview": "A generative research project to understand the needs and behaviors of university students in their online learning process, informing the design of a new platform from scratch.",
-        "challenge": "Existing educational platforms had low student retention and high course abandonment. We needed to understand what motivated students and what barriers they faced in their learning experience.",
-        "solution": "Through ethnographic research, diary studies, and in-depth interviews, we discovered that lack of personalization and immediate feedback were the main barriers. We designed an experience that adapts to individual learning styles.",
-        "process": [
-          { "step": "Discovery", "description": "15 contextual interviews with students, 2-week diary study with 10 participants, benchmark of 6 platforms, and abandonment data analysis." },
-          { "step": "Definition", "description": "Affinity mapping of 200+ insights, 4 behavior-based personas, detailed experience maps, and key opportunity identification." },
-          { "step": "Ideation", "description": "Co-design workshop with 8 students, tree testing of information architecture, iterative wireframes with validation at each cycle." },
-          { "step": "Validation", "description": "Remote usability tests with Maze (25 participants), heatmap analysis, 3 iteration cycles, and stakeholder findings presentation." }
-        ],
-        "results": [
-          "Identification of 4 distinct learning behavior patterns",
-          "Personalized path system based on research insights",
-          "Onboarding flow with 92% completion rate in testing",
-          "45-page research report for the product team"
-        ]
-      },
-      {
-        "slug": "dashboard-gestion",
-        "title": "Management Dashboard",
-        "category": "UX Research & Information Architecture",
-        "description": "Internal user research and workflow analysis resulting in a modular dashboard with 40% task time reduction.",
-        "tags": ["Stakeholder Research", "Task Analysis", "Information Architecture", "Usability Testing"],
-        "overview": "Research focused on internal users of an organization to understand their current workflows and design a dashboard that centralizes metrics and tasks, improving operational efficiency.",
-        "challenge": "The management team handled information across multiple disconnected tools, causing delays in decision-making and data duplication. We needed to understand real workflows before proposing solutions.",
-        "solution": "I conducted contextual research observing users in their work environment, identifying pain points and automation opportunities. The modular design allows role-based customization, validated with each user group.",
-        "process": [
-          { "step": "Discovery", "description": "6 shadowing sessions with users, interviews with 4 stakeholders, audit of existing tools, and critical task analysis." },
-          { "step": "Definition", "description": "Current workflow mapping, identification of 12 main pain points, prioritization with impact/effort matrix, and success metrics definition." },
-          { "step": "Ideation", "description": "Card sorting to organize information by role, modular layout sketches with users, iterative wireframes with continuous feedback." },
-          { "step": "Validation", "description": "Usability testing with 6 end users, task time measurement, iterations, and usage pattern documentation." }
-        ],
-        "results": [
-          "40% reduction in recurring task time",
-          "4 role-based customized views based on card sorting",
-          "Elimination of 3 redundant tools identified in research",
-          "UX metrics framework to measure post-launch adoption"
-        ]
+        "slug": "huellitas-adopcion",
+        "title": "Huellitas - Plataforma de Adopción Responsable",
+        "category": "UX Research & Product Design",
+        "description": "A responsible pet adoption platform connecting shelters with potential adopters through a research-driven matching system.",
+        "tags": ["User Research", "Problem Solving", "User Flows", "Information Architecture", "Usability Testing"]
       }
     ]
   },

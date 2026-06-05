@@ -65,76 +65,24 @@
     ]
   },
   "projects": {
-    "label": "Proyectos",
-    "heading": "Casos de estudio",
-    "intro": "Una selección de proyectos que demuestran mi proceso de investigación de usuarios, definición de problemas y diseño de soluciones centradas en el usuario.",
-    "viewProject": "Ver caso de estudio",
+    "label": "Casos de Estudio",
+    "heading": "Casos de Estudio UX",
+    "intro": "Proyectos reales que demuestran mi proceso de investigación UX, enfoque de resolución de problemas y metodología de diseño centrada en el usuario.",
+    "viewProject": "Ver Caso de Estudio",
     "items": [
       {
-        "slug": "app-finanzas-personales",
-        "title": "App de Finanzas Personales",
-        "category": "UX Research & Redesign",
-        "description": "Investigación exhaustiva de usuarios que reveló pain points críticos, llevando a un rediseño basado en datos que redujo el flujo de registro en un 50%.",
-        "tags": ["User Research", "Usability Testing", "Information Architecture", "Prototyping"],
-        "overview": "Este proyecto consistió en una investigación profunda de usuarios para entender por qué la app original tenía alta tasa de abandono. A través de entrevistas, pruebas de usabilidad y análisis de datos, identificamos los problemas raíz y diseñamos soluciones validadas con usuarios reales.",
-        "challenge": "La app original presentaba una tasa de abandono del 60% en el flujo de registro y los usuarios reportaban dificultad para encontrar funciones clave. El equipo de producto necesitaba entender las causas raíz antes de invertir en desarrollo.",
-        "solution": "Realicé una investigación mixta (cualitativa y cuantitativa) que reveló problemas de arquitectura de información y sobrecarga cognitiva. Los wireframes fueron validados iterativamente con usuarios antes de pasar a alta fidelidad, asegurando que las soluciones respondieran a necesidades reales.",
-        "process": [
-          { "step": "Descubrimiento", "description": "12 entrevistas en profundidad con usuarios, análisis de analytics existentes, benchmark de 5 competidores y sesiones de stakeholder mapping." },
-          { "step": "Definición", "description": "Síntesis de 150+ insights mediante affinity mapping, creación de 3 personas basadas en datos, mapeo de current y future state journey maps." },
-          { "step": "Ideación", "description": "Workshop de co-creación con usuarios, nueva arquitectura de información validada con card sorting (20 participantes), wireframes iterativos." },
-          { "step": "Validación", "description": "Pruebas de usabilidad con 8 participantes (tasa de éxito del 94% vs 45% original), 3 ciclos de iteración basados en hallazgos." }
-        ],
-        "results": [
-          "Reducción del flujo de registro de 6 a 3 pasos (validado con usuarios)",
-          "Tasa de éxito en tareas críticas aumentó del 45% al 94%",
-          "Arquitectura de información reorganizada basada en card sorting con 20 usuarios",
-          "Documentación completa de research para futuros ciclos de mejora"
-        ]
+        "slug": "sistema-turnos-medicos",
+        "title": "Sistema de Turnos Médicos",
+        "category": "UX Research & Service Design",
+        "description": "Un sistema integral de gestión de turnos médicos diseñado para optimizar la experiencia de reserva de pacientes a través de investigación de usuarios y testing iterativo.",
+        "tags": ["User Research", "User Flows", "Information Architecture", "Usability Testing", "Service Design"]
       },
       {
-        "slug": "plataforma-e-learning",
-        "title": "Plataforma E-learning",
-        "category": "UX Research & Design",
-        "description": "Investigación generativa con estudiantes universitarios que informó el diseño de una plataforma educativa con rutas de aprendizaje personalizadas.",
-        "tags": ["Generative Research", "User Interviews", "Journey Mapping", "Prototyping"],
-        "overview": "Proyecto de investigación generativa para entender las necesidades y comportamientos de estudiantes universitarios en su proceso de aprendizaje online, informando el diseño de una nueva plataforma desde cero.",
-        "challenge": "Las plataformas educativas existentes tenían baja retención de estudiantes y alto abandono de cursos. Se necesitaba entender qué motivaba a los estudiantes y qué barreras enfrentaban en su experiencia de aprendizaje.",
-        "solution": "A través de investigación etnográfica, diary studies y entrevistas en profundidad, descubrimos que la falta de personalización y feedback inmediato eran las principales barreras. Diseñamos una experiencia que se adapta al estilo de aprendizaje individual.",
-        "process": [
-          { "step": "Descubrimiento", "description": "15 entrevistas contextuales con estudiantes, diary study de 2 semanas con 10 participantes, benchmark de 6 plataformas y análisis de datos de abandono." },
-          { "step": "Definición", "description": "Affinity mapping de 200+ insights, 4 personas basadas en comportamientos reales, experience maps detallados y identificación de oportunidades clave." },
-          { "step": "Ideación", "description": "Workshop de co-diseño con 8 estudiantes, tree testing de la arquitectura de información, wireframes iterativos con validación en cada ciclo." },
-          { "step": "Validación", "description": "Pruebas de usabilidad remotas con Maze (25 participantes), análisis de mapas de calor, iteración en 3 ciclos y presentación de hallazgos a stakeholders." }
-        ],
-        "results": [
-          "Identificación de 4 patrones de comportamiento de aprendizaje distintos",
-          "Sistema de rutas personalizadas basado en insights de investigación",
-          "Flujo de onboarding con 92% de tasa de completado en pruebas",
-          "Reporte de investigación de 45 páginas para el equipo de producto"
-        ]
-      },
-      {
-        "slug": "dashboard-gestion",
-        "title": "Dashboard de Gestión",
-        "category": "UX Research & Information Architecture",
-        "description": "Investigación de usuarios internos y análisis de workflows que resultó en un dashboard modular con reducción del 40% en tiempo de tareas.",
-        "tags": ["Stakeholder Research", "Task Analysis", "Information Architecture", "Usability Testing"],
-        "overview": "Investigación enfocada en usuarios internos de una organización para entender sus workflows actuales y diseñar un dashboard que centralice métricas y tareas, mejorando la eficiencia operativa.",
-        "challenge": "El equipo de gestión manejaba información en múltiples herramientas desconectadas, generando demoras en la toma de decisiones y duplicación de datos. Se necesitaba entender los workflows reales antes de proponer soluciones.",
-        "solution": "Realicé investigación contextual observando a usuarios en su ambiente de trabajo, identificando pain points y oportunidades de automatización. El diseño modular permite personalización por rol, validada con cada grupo de usuarios.",
-        "process": [
-          { "step": "Descubrimiento", "description": "6 sesiones de shadowing con usuarios, entrevistas con 4 stakeholders, auditoría de herramientas existentes y análisis de tareas críticas." },
-          { "step": "Definición", "description": "Mapeo de workflows actuales, identificación de 12 pain points principales, priorización con matriz de impacto/esfuerzo y definición de métricas de éxito." },
-          { "step": "Ideación", "description": "Card sorting para organizar información por rol, sketches de layouts modulares con usuarios, wireframes iterativos con feedback continuo." },
-          { "step": "Validación", "description": "Pruebas de usabilidad con 6 usuarios finales, medición de tiempo en tareas, iteraciones y documentación de patrones de uso." }
-        ],
-        "results": [
-          "Reducción del 40% en tiempo de tareas recurrentes",
-          "4 vistas personalizadas por rol basadas en card sorting",
-          "Eliminación de 3 herramientas redundantes identificadas en research",
-          "Framework de métricas UX para medir adopción post-lanzamiento"
-        ]
+        "slug": "huellitas-adopcion",
+        "title": "Huellitas - Plataforma de Adopción Responsable",
+        "category": "UX Research & Product Design",
+        "description": "Una plataforma de adopción responsable de mascotas que conecta refugios con potenciales adoptantes a través de un sistema de matching basado en investigación.",
+        "tags": ["User Research", "Problem Solving", "User Flows", "Information Architecture", "Usability Testing"]
       }
     ]
   },

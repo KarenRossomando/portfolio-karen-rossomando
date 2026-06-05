@@ -8,20 +8,14 @@ export interface ProjectBase {
 export const projects: ProjectBase[] = [
   {
     id: 1,
-    slug: "app-finanzas-personales",
+    slug: "sistema-turnos-medicos",
     color: "bg-primary/10",
-    tools: ["Figma", "FigJam", "Maze", "Google Forms", "Notion"],
+    tools: ["Figma", "FigJam", "Miro", "Google Forms", "Notion"],
   },
   {
     id: 2,
-    slug: "plataforma-e-learning",
+    slug: "huellitas-adopcion",
     color: "bg-chart-2/10",
-    tools: ["Figma", "FigJam", "Maze", "Miro", "Optimal Workshop"],
-  },
-  {
-    id: 3,
-    slug: "dashboard-gestion",
-    color: "bg-chart-3/10",
-    tools: ["Figma", "FigJam", "Notion", "Zeroheight"],
+    tools: ["Figma", "FigJam", "Optimal Workshop", "Maze", "Dovetail"],
   },
 ]
