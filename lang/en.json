@@ -29,41 +29,57 @@
     "card2Title": "Strategy",
     "card2Text": "Defining opportunities from insights and data to design with purpose.",
     "card3Title": "Design",
-    "card3Text": "Wireframes, user flows, and user-centered information architecture.",
+    "card3Text": "I create flows, wireframes, and prototypes focused on clarity and usability.",
     "card4Title": "Validation",
-    "card4Text": "Usability testing and iteration based on real user feedback."
+    "card4Text": "I test, iterate, and optimize solutions based on evidence and real feedback."
   },
   "skills": {
     "label": "Skills",
-    "heading": "UX Methodologies & Competencies",
-    "designLabel": "UX Research & Strategy",
-    "techLabel": "Analysis & Documentation",
+    "heading": "UX Skills",
+    "researchLabel": "UX Research",
+    "architectureLabel": "UX Architecture",
     "toolsLabel": "Tools",
-    "designSkills": [
-      { "name": "User Research", "description": "In-depth interviews, surveys, field studies, and contextual inquiry" },
-      { "name": "Usability Testing", "description": "Moderated and unmoderated testing, task analysis, and heuristic evaluation" },
-      { "name": "Information Architecture", "description": "Card sorting, tree testing, site maps, and taxonomies" },
-      { "name": "User Flows", "description": "Journey mapping, task flows, and interaction diagrams" },
-      { "name": "Wireframing", "description": "Low and high-fidelity wireframes for early validation" },
-      { "name": "Data Synthesis", "description": "Affinity mapping, data-driven personas, and insight reports" }
+    "researchSkills": [
+      "User Interviews",
+      "Benchmarking",
+      "User Research",
+      "User Personas",
+      "Empathy Maps",
+      "User Journey Mapping",
+      "Insight Analysis",
+      "Usability Testing"
     ],
-    "techSkills": [
-      { "name": "Requirements Analysis", "description": "Gathering, functional documentation, and technical specifications" },
-      { "name": "UX Documentation", "description": "Research reports, style guides, and pattern documentation" },
-      { "name": "UX Metrics", "description": "KPI analysis, conversion rates, and usability metrics" },
-      { "name": "UML Diagrams", "description": "Use cases, flow diagrams, and system architecture" }
-    ]
+    "architectureSkills": [
+      "Information Architecture",
+      "User Flows",
+      "Task Flows",
+      "Journey Maps",
+      "Sitemaps",
+      "Card Sorting",
+      "Wireframing"
+    ],
+    "tools": ["Figma", "FigJam", "Miro", "Maze", "Notion", "Google Analytics", "Google Forms", "ChatGPT"]
   },
   "process": {
     "label": "Process",
-    "heading": "My UX Design Process",
-    "intro": "A structured, user-centered approach that transforms complex problems into intuitive solutions through continuous research and validation.",
+    "heading": "My design process",
     "steps": [
-      { "number": "Step 01", "title": "Research", "description": "User interviews, surveys, competitive analysis, and stakeholder workshops to understand the problem space." },
-      { "number": "Step 02", "title": "Define", "description": "Synthesize insights into personas, journey maps, and clear problem statements that guide design decisions." },
-      { "number": "Step 03", "title": "Ideate", "description": "Brainstorming, sketching, and exploring multiple solutions through collaborative design sessions." },
-      { "number": "Step 04", "title": "Prototype", "description": "Create wireframes and interactive prototypes to visualize and communicate design concepts." },
-      { "number": "Step 05", "title": "Test", "description": "Usability testing, A/B testing, and iterative refinement based on real user feedback." }
+      {
+        "title": "Research",
+        "items": ["Interviews", "Benchmarking", "User analysis", "Problem identification"]
+      },
+      {
+        "title": "Definition",
+        "items": ["Insights", "User Personas", "Empathy Maps", "Journey Maps"]
+      },
+      {
+        "title": "Ideation",
+        "items": ["Information architecture", "User Flows", "Task Flows", "Wireframes"]
+      },
+      {
+        "title": "Validation",
+        "items": ["Prototypes", "Usability Testing", "Evidence-based iteration"]
+      }
     ]
   },
   "projects": {

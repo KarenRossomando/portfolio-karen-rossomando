@@ -29,41 +29,57 @@
     "card2Title": "Estrategia",
     "card2Text": "Defino oportunidades a partir de insights y datos para diseñar con propósito.",
     "card3Title": "Diseño",
-    "card3Text": "Wireframes, flujos de usuario y arquitectura de información centrada en el usuario.",
+    "card3Text": "Creo flujos, wireframes y prototipos centrados en la claridad y la usabilidad.",
     "card4Title": "Validación",
-    "card4Text": "Pruebas de usabilidad e iteración basada en feedback real de usuarios."
+    "card4Text": "Pruebo, itero y optimizo soluciones basadas en evidencia y feedback real."
   },
   "skills": {
     "label": "Habilidades",
-    "heading": "Metodologías & Competencias UX",
-    "designLabel": "UX Research & Strategy",
-    "techLabel": "Análisis & Documentación",
+    "heading": "Habilidades UX",
+    "researchLabel": "Investigación UX",
+    "architectureLabel": "Arquitectura UX",
     "toolsLabel": "Herramientas",
-    "designSkills": [
-      { "name": "User Research", "description": "Entrevistas en profundidad, encuestas, estudios de campo y análisis contextual" },
-      { "name": "Usability Testing", "description": "Pruebas moderadas y no moderadas, análisis de tareas y evaluación heurística" },
-      { "name": "Information Architecture", "description": "Card sorting, tree testing, mapas de sitio y taxonomías" },
-      { "name": "User Flows", "description": "Mapeo de journeys, flujos de tareas y diagramas de interacción" },
-      { "name": "Wireframing", "description": "Wireframes de baja y alta fidelidad para validación temprana" },
-      { "name": "Data Synthesis", "description": "Affinity mapping, personas basadas en datos y reportes de insights" }
+    "researchSkills": [
+      "Entrevistas a usuarios",
+      "Benchmarking",
+      "User Research",
+      "User Personas",
+      "Empathy Maps",
+      "User Journey Mapping",
+      "Análisis de Insights",
+      "Usability Testing"
     ],
-    "techSkills": [
-      { "name": "Análisis de Requerimientos", "description": "Relevamiento, documentación funcional y especificaciones técnicas" },
-      { "name": "Documentación UX", "description": "Reportes de investigación, guías de estilo y documentación de patrones" },
-      { "name": "Métricas UX", "description": "Análisis de KPIs, tasas de conversión y métricas de usabilidad" },
-      { "name": "Diagramas UML", "description": "Casos de uso, diagramas de flujo y arquitectura de sistemas" }
-    ]
+    "architectureSkills": [
+      "Information Architecture",
+      "User Flows",
+      "Task Flows",
+      "Journey Maps",
+      "Sitemaps",
+      "Card Sorting",
+      "Wireframing"
+    ],
+    "tools": ["Figma", "FigJam", "Miro", "Maze", "Notion", "Google Analytics", "Google Forms", "ChatGPT"]
   },
   "process": {
     "label": "Proceso",
-    "heading": "Mi Proceso de Diseño UX",
-    "intro": "Un enfoque estructurado y centrado en el usuario que transforma problemas complejos en soluciones intuitivas a través de investigación y validación continua.",
+    "heading": "Mi proceso de diseño",
     "steps": [
-      { "number": "Paso 01", "title": "Investigar", "description": "Entrevistas con usuarios, encuestas, análisis competitivo y workshops con stakeholders para entender el espacio del problema." },
-      { "number": "Paso 02", "title": "Definir", "description": "Sintetizar insights en personas, mapas de journey y declaraciones claras del problema que guían las decisiones de diseño." },
-      { "number": "Paso 03", "title": "Idear", "description": "Brainstorming, sketching y exploración de múltiples soluciones a través de sesiones colaborativas de diseño." },
-      { "number": "Paso 04", "title": "Prototipar", "description": "Crear wireframes y prototipos interactivos para visualizar y comunicar conceptos de diseño." },
-      { "number": "Paso 05", "title": "Testear", "description": "Pruebas de usabilidad, A/B testing y refinamiento iterativo basado en feedback real de usuarios." }
+      {
+        "title": "Investigación",
+        "items": ["Entrevistas", "Benchmarking", "Análisis de usuarios", "Identificación de problemas"]
+      },
+      {
+        "title": "Definición",
+        "items": ["Insights", "User Personas", "Empathy Maps", "Journey Maps"]
+      },
+      {
+        "title": "Ideación",
+        "items": ["Arquitectura de información", "User Flows", "Task Flows", "Wireframes"]
+      },
+      {
+        "title": "Validación",
+        "items": ["Prototipos", "Usability Testing", "Iteración basada en evidencia"]
+      }
     ]
   },
   "projects": {

@@ -5,6 +5,10 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    remotePatterns: [
+      { protocol: 'https', hostname: 'cdn.jsdelivr.net' },
+      { protocol: 'https', hostname: 'cdn.worldvectorlogo.com' },
+    ],
   },
 }
 
