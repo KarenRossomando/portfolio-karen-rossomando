@@ -26,7 +26,7 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div className="grid gap-8 lg:grid-cols-2">
           {projects.map((base) => {
             const project = t.projects.items.find((p) => p.slug === base.slug)
             if (!project) return null
@@ -37,56 +37,67 @@ export function Projects() {
                 href={`/proyecto/${base.slug}`}
                 onMouseEnter={() => setHoveredId(base.id)}
                 onMouseLeave={() => setHoveredId(null)}
-                className="group relative block overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5"
               >
-                <div className="flex flex-col gap-6 p-6 sm:p-8 md:flex-row md:items-start md:gap-10">
-                  {/* Thumbnail area */}
-                  <div
-                    className={`flex h-40 w-full shrink-0 items-center justify-center rounded-lg md:h-48 md:w-64 ${base.color} transition-all`}
-                  >
-                    <span className="font-serif text-5xl font-bold text-primary/30">
+                {/* Project cover placeholder */}
+                <div
+                  className={`relative flex h-56 items-center justify-center ${base.color} transition-all sm:h-64`}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-card/20" />
+                  <div className="relative text-center">
+                    <span className="font-serif text-6xl font-bold text-primary/20 sm:text-7xl">
                       {String(base.id).padStart(2, "0")}
                     </span>
+                    <p className="mt-2 text-xs font-medium uppercase tracking-widest text-primary/60">
+                      Case Study
+                    </p>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="flex flex-1 flex-col p-6 sm:p-8">
+                  <div className="mb-1 flex items-start justify-between gap-4">
+                    <div>
+                      <span className="text-xs font-medium uppercase tracking-wider text-primary">
+                        {project.category}
+                      </span>
+                      <h3 className="mt-2 font-serif text-2xl font-bold text-foreground sm:text-3xl">
+                        {project.title}
+                      </h3>
+                      {project.subtitle && (
+                        <p className="mt-1 text-sm font-medium text-muted-foreground">
+                          {project.subtitle}
+                        </p>
+                      )}
+                    </div>
+                    <ArrowUpRight
+                      className={`mt-1 h-6 w-6 shrink-0 text-muted-foreground transition-all ${
+                        hoveredId === base.id
+                          ? "translate-x-1 -translate-y-1 text-primary"
+                          : ""
+                      }`}
+                    />
                   </div>
 
-                  {/* Content */}
-                  <div className="flex flex-1 flex-col">
-                    <div className="mb-1 flex items-start justify-between gap-4">
-                      <div>
-                        <span className="text-xs font-medium uppercase tracking-wider text-primary">
-                          {project.category}
-                        </span>
-                        <h3 className="mt-1 font-serif text-xl font-bold text-foreground sm:text-2xl">
-                          {project.title}
-                        </h3>
-                      </div>
-                      <ArrowUpRight
-                        className={`mt-1 h-5 w-5 shrink-0 text-muted-foreground transition-all ${
-                          hoveredId === base.id
-                            ? "translate-x-0.5 -translate-y-0.5 text-primary"
-                            : ""
-                        }`}
-                      />
-                    </div>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                    {project.description}
+                  </p>
 
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                      {project.description}
-                    </p>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
 
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-
-                    <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary opacity-0 transition-opacity group-hover:opacity-100">
+                  <div className="mt-6 pt-4 border-t border-border">
+                    <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all group-hover:gap-3">
                       {t.projects.viewProject}
-                      <ArrowUpRight className="h-3.5 w-3.5" />
+                      <ArrowUpRight className="h-4 w-4" />
                     </span>
                   </div>
                 </div>
