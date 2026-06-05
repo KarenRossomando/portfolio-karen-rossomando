@@ -11,10 +11,10 @@
     "switchLang": "ES"
   },
   "hero": {
-    "subtitle": "UI/UX Designer & Systems Analyst",
-    "tagline": "Creating digital experiences with",
-    "taglineHighlight": "purpose",
-    "description": "I combine my technical background as a Systems Analyst with my passion for user-centered design to create intuitive, accessible, and visually compelling interfaces.",
+    "subtitle": "UX Designer & UX Researcher",
+    "tagline": "Designing user-centered",
+    "taglineHighlight": "solutions",
+    "description": "I transform complex problems into intuitive experiences through rigorous research, usability testing, and strategic information architecture. My Systems Analysis background enables me to bridge user needs with technically viable solutions.",
     "cta": "View Projects",
     "ctaContact": "Contact Me",
     "scrollLabel": "Scroll",
@@ -22,124 +22,124 @@
   },
   "about": {
     "label": "About Me",
-    "heading": "Design & Technology, a holistic approach",
-    "p1": "I'm passionate about interface design and user experience. My journey began in the world of systems analysis, where I learned to understand problems at their root and think through solutions in a structured way.",
-    "p2": "Today I combine that technical background with my creative skills to design digital products that not only look great, but work intuitively and solve real user needs.",
-    "p3": "I'm currently in my final year of the Systems Analyst degree, which gives me a unique perspective: I can speak the same language as developers and stakeholders, bridging the gap between design and development.",
-    "card1Title": "Technical Background",
-    "card1Text": "Systems Analyst (final year). Solid foundation in logic, databases, software engineering, and agile methodologies.",
-    "card2Title": "Design Vision",
-    "card2Text": "Specialized in UI/UX Design with a focus on accessibility, design systems, and user-centered experiences."
+    "heading": "Research & Experience Strategy",
+    "p1": "As a UX Designer and Researcher, my focus is on deeply understanding users before designing any solution. I firmly believe that the best digital experiences are born from rigorous research and continuous validation.",
+    "p2": "My background as a Systems Analyst gives me a unique perspective: I can translate research insights into clear technical requirements, facilitating collaboration between design and development teams.",
+    "p3": "I specialize in uncovering real user needs through interviews, usability testing, and data analysis, transforming those findings into optimized user flows and effective information architectures.",
+    "card1Title": "Analytical Mindset",
+    "card1Text": "Systems Analyst (final year). Structured approach to problem-solving, data analysis, and requirements documentation.",
+    "card2Title": "User Research",
+    "card2Text": "Specialized in UX Research methodologies: interviews, usability testing, card sorting, heuristic analysis, and insight synthesis."
   },
   "skills": {
     "label": "Skills",
-    "heading": "Tools & Competencies",
-    "designLabel": "UI/UX Design",
-    "techLabel": "Systems Analysis",
+    "heading": "UX Methodologies & Competencies",
+    "designLabel": "UX Research & Strategy",
+    "techLabel": "Analysis & Documentation",
     "toolsLabel": "Tools",
     "designSkills": [
-      { "name": "Figma", "description": "Interface design, components and design systems" },
-      { "name": "Wireframing", "description": "Structuring and planning user flows" },
-      { "name": "Prototyping", "description": "Interactive high and low-fidelity prototypes" },
-      { "name": "User Research", "description": "User research, interviews and surveys" },
-      { "name": "UI Design", "description": "Visual design, typography, color and composition" },
-      { "name": "Usability Testing", "description": "Heuristic evaluation and usability testing" }
+      { "name": "User Research", "description": "In-depth interviews, surveys, field studies, and contextual inquiry" },
+      { "name": "Usability Testing", "description": "Moderated and unmoderated testing, task analysis, and heuristic evaluation" },
+      { "name": "Information Architecture", "description": "Card sorting, tree testing, site maps, and taxonomies" },
+      { "name": "User Flows", "description": "Journey mapping, task flows, and interaction diagrams" },
+      { "name": "Wireframing", "description": "Low and high-fidelity wireframes for early validation" },
+      { "name": "Data Synthesis", "description": "Affinity mapping, data-driven personas, and insight reports" }
     ],
     "techSkills": [
-      { "name": "HTML / CSS", "description": "Web markup and responsive styling" },
-      { "name": "Databases", "description": "Relational modeling and SQL queries" },
-      { "name": "Requirements Analysis", "description": "Gathering, documentation and functional specification" },
-      { "name": "UML Diagrams", "description": "Use cases, class and sequence diagrams" }
+      { "name": "Requirements Analysis", "description": "Gathering, functional documentation, and technical specifications" },
+      { "name": "UX Documentation", "description": "Research reports, style guides, and pattern documentation" },
+      { "name": "UX Metrics", "description": "KPI analysis, conversion rates, and usability metrics" },
+      { "name": "UML Diagrams", "description": "Use cases, flow diagrams, and system architecture" }
     ]
   },
   "process": {
     "label": "Process",
-    "heading": "My way of working",
+    "heading": "My approach to UX",
     "steps": [
-      { "number": "01", "title": "Research", "description": "Understanding the problem, users, and context. User research, benchmarking and requirements analysis." },
-      { "number": "02", "title": "Ideation", "description": "Low and high-fidelity wireframes. Defining flows, information architecture and user flows." },
-      { "number": "03", "title": "Design", "description": "Interactive prototypes in Figma. Design system, reusable components and visual specifications." },
-      { "number": "04", "title": "Validation", "description": "Usability testing, iteration based on real feedback and detailed handoff for development." }
+      { "number": "01", "title": "Discovery", "description": "User research, stakeholder analysis, competitive benchmarking, and problem definition." },
+      { "number": "02", "title": "Definition", "description": "Insight synthesis, persona creation, user journey mapping, and information architecture definition." },
+      { "number": "03", "title": "Ideation", "description": "Collaborative workshops, sketching, iterative wireframes, and prototypes for early user validation." },
+      { "number": "04", "title": "Validation", "description": "Usability testing, data-driven iteration, findings documentation, and development handoff." }
     ]
   },
   "projects": {
     "label": "Projects",
-    "heading": "Selected works",
-    "intro": "A selection of academic and personal projects that reflect my design process and technical skills.",
-    "viewProject": "View full project",
+    "heading": "Case studies",
+    "intro": "A selection of projects demonstrating my user research process, problem definition, and user-centered design solutions.",
+    "viewProject": "View case study",
     "items": [
       {
         "slug": "app-finanzas-personales",
         "title": "Personal Finance App",
-        "category": "UI/UX Design",
-        "description": "Complete redesign of a financial management app. User research, wireframes, interactive prototype and design system in Figma.",
-        "tags": ["Figma", "User Research", "Prototyping", "Design System"],
-        "overview": "This project consisted of the complete redesign of a personal finance mobile application. The main goal was to improve the user experience by simplifying complex flows and creating a modern, accessible visual interface that allows users to manage their finances intuitively.",
-        "challenge": "The original app had confusing navigation, information-overloaded screens, and a high drop-off rate in the registration flow. Users reported difficulty finding key features such as transaction history and budget settings.",
-        "solution": "A complete restructuring of the information architecture was carried out, main flows were simplified, and a consistent design system was created. Financial data visualization with clear charts was prioritized, and a guided onboarding was implemented for new users.",
+        "category": "UX Research & Redesign",
+        "description": "Comprehensive user research that revealed critical pain points, leading to a data-driven redesign that reduced the registration flow by 50%.",
+        "tags": ["User Research", "Usability Testing", "Information Architecture", "Prototyping"],
+        "overview": "This project consisted of deep user research to understand why the original app had a high drop-off rate. Through interviews, usability testing, and data analysis, we identified root problems and designed solutions validated with real users.",
+        "challenge": "The original app had a 60% drop-off rate in the registration flow and users reported difficulty finding key features. The product team needed to understand the root causes before investing in development.",
+        "solution": "I conducted mixed-methods research (qualitative and quantitative) that revealed information architecture problems and cognitive overload. Wireframes were iteratively validated with users before moving to high fidelity, ensuring solutions addressed real needs.",
         "process": [
-          { "step": "Research", "description": "Interviews with 12 users, competitive analysis of 5 leading market apps, satisfaction surveys and creation of 3 representative user personas." },
-          { "step": "Ideation", "description": "Card sorting sessions with real users, new information architecture, optimized user flows and initial sketches of the main screens." },
-          { "step": "Design", "description": "Low and high-fidelity wireframes in Figma, design system with reusable components, accessible color palette and typography optimized for reading on mobile devices." },
-          { "step": "Validation", "description": "Usability tests with 8 participants, feedback-based iterations, final interactive prototype and complete design system documentation." }
+          { "step": "Discovery", "description": "12 in-depth user interviews, existing analytics analysis, benchmark of 5 competitors, and stakeholder mapping sessions." },
+          { "step": "Definition", "description": "Synthesis of 150+ insights through affinity mapping, creation of 3 data-driven personas, mapping of current and future state journey maps." },
+          { "step": "Ideation", "description": "Co-creation workshop with users, new information architecture validated with card sorting (20 participants), iterative wireframes." },
+          { "step": "Validation", "description": "Usability testing with 8 participants (94% success rate vs 45% original), 3 iteration cycles based on findings." }
         ],
         "results": [
-          "Registration flow reduced from 6 to 3 steps",
-          "Reorganized information architecture with direct access to the 4 most used features",
-          "Design system with over 40 documented components",
-          "High-fidelity interactive prototype with 25 screens"
+          "Registration flow reduced from 6 to 3 steps (user-validated)",
+          "Critical task success rate increased from 45% to 94%",
+          "Information architecture reorganized based on card sorting with 20 users",
+          "Complete research documentation for future improvement cycles"
         ]
       },
       {
         "slug": "plataforma-e-learning",
         "title": "E-learning Platform",
-        "category": "UX Research + UI",
-        "description": "Educational platform design from scratch. User interviews, empathy maps, wireframes and high-fidelity prototype.",
-        "tags": ["Figma", "Wireframing", "UX Research", "Prototyping"],
-        "overview": "Comprehensive design of an e-learning platform aimed at university students. The project covered everything from initial user research to the delivery of a high-fidelity prototype, with a focus on accessibility and motivation for continuous learning.",
-        "challenge": "Existing educational platforms had overwhelming interfaces, lack of personalization in learning paths, and low student retention. An experience was needed that would motivate continuous learning and adapt to different study styles.",
-        "solution": "A platform was designed with customizable learning paths, a subtle gamification system to maintain motivation, and a clean interface that prioritizes content. A personalized dashboard was implemented that visually shows progress and celebrates achievements.",
+        "category": "UX Research & Design",
+        "description": "Generative research with university students that informed the design of an educational platform with personalized learning paths.",
+        "tags": ["Generative Research", "User Interviews", "Journey Mapping", "Prototyping"],
+        "overview": "A generative research project to understand the needs and behaviors of university students in their online learning process, informing the design of a new platform from scratch.",
+        "challenge": "Existing educational platforms had low student retention and high course abandonment. We needed to understand what motivated students and what barriers they faced in their learning experience.",
+        "solution": "Through ethnographic research, diary studies, and in-depth interviews, we discovered that lack of personalization and immediate feedback were the main barriers. We designed an experience that adapts to individual learning styles.",
         "process": [
-          { "step": "Research", "description": "In-depth interviews with 15 university students, benchmark of 6 educational platforms, empathy maps and definition of 4 user personas." },
-          { "step": "Ideation", "description": "Co-creation workshop with students, user experience maps, prioritization of key features using MoSCoW methodology and storyboards of key flows." },
-          { "step": "Design", "description": "Iterative wireframes, design system focused on WCAG 2.1 AA accessibility, low and high-fidelity prototypes, and micro-interactions for system feedback." },
-          { "step": "Validation", "description": "Remote usability tests with Maze, heatmap analysis, iterations over 3 improvement cycles and final presentation to stakeholders." }
+          { "step": "Discovery", "description": "15 contextual interviews with students, 2-week diary study with 10 participants, benchmark of 6 platforms, and abandonment data analysis." },
+          { "step": "Definition", "description": "Affinity mapping of 200+ insights, 4 behavior-based personas, detailed experience maps, and key opportunity identification." },
+          { "step": "Ideation", "description": "Co-design workshop with 8 students, tree testing of information architecture, iterative wireframes with validation at each cycle." },
+          { "step": "Validation", "description": "Remote usability tests with Maze (25 participants), heatmap analysis, 3 iteration cycles, and stakeholder findings presentation." }
         ],
         "results": [
-          "Complete responsive design for desktop, tablet and mobile",
-          "Gamification system with study badges and streaks",
-          "Onboarding flow that personalizes the experience in 4 steps",
-          "Interactive prototype with over 35 connected screens"
+          "Identification of 4 distinct learning behavior patterns",
+          "Personalized path system based on research insights",
+          "Onboarding flow with 92% completion rate in testing",
+          "45-page research report for the product team"
         ]
       },
       {
         "slug": "dashboard-gestion",
         "title": "Management Dashboard",
-        "category": "UI Design",
-        "description": "Administration interface for an internal system. Reusable components, responsive design and design system documentation.",
-        "tags": ["Figma", "Design System", "Responsive", "Components"],
-        "overview": "Design of an internal management dashboard for an organization that needed to centralize metrics, reports and tasks in a single interface. The project focused on creating a clear, efficient and scalable visual system, with a complete design system to facilitate future implementations.",
-        "challenge": "The management team handled information across multiple spreadsheets and disconnected tools. There was no unified view of key metrics, leading to delays in decision-making and errors due to lack of real-time updated data.",
-        "solution": "A modular dashboard was designed with configurable widgets, real-time data visualization, intelligent alerts system and scalable component architecture. Efficiency in recurring tasks and customization by user role were prioritized.",
+        "category": "UX Research & Information Architecture",
+        "description": "Internal user research and workflow analysis resulting in a modular dashboard with 40% task time reduction.",
+        "tags": ["Stakeholder Research", "Task Analysis", "Information Architecture", "Usability Testing"],
+        "overview": "Research focused on internal users of an organization to understand their current workflows and design a dashboard that centralizes metrics and tasks, improving operational efficiency.",
+        "challenge": "The management team handled information across multiple disconnected tools, causing delays in decision-making and data duplication. We needed to understand real workflows before proposing solutions.",
+        "solution": "I conducted contextual research observing users in their work environment, identifying pain points and automation opportunities. The modular design allows role-based customization, validated with each user group.",
         "process": [
-          { "step": "Research", "description": "Interviews with 6 members of the management team, analysis of current workflows, audit of existing tools and identification of main pain points." },
-          { "step": "Ideation", "description": "Definition of key metrics by role, sketches of modular layouts, information hierarchy definition and feature prioritization with the development team." },
-          { "step": "Design", "description": "Complete design system with atomic components, charts and data visualizations, responsive design for desktop and tablet, and light/dark modes." },
-          { "step": "Validation", "description": "Review with the development team to ensure technical feasibility, tests with end users, iterations and complete documentation in Figma." }
+          { "step": "Discovery", "description": "6 shadowing sessions with users, interviews with 4 stakeholders, audit of existing tools, and critical task analysis." },
+          { "step": "Definition", "description": "Current workflow mapping, identification of 12 main pain points, prioritization with impact/effort matrix, and success metrics definition." },
+          { "step": "Ideation", "description": "Card sorting to organize information by role, modular layout sketches with users, iterative wireframes with continuous feedback." },
+          { "step": "Validation", "description": "Usability testing with 6 end users, task time measurement, iterations, and usage pattern documentation." }
         ],
         "results": [
-          "Design system with over 60 documented components",
-          "Role-customizable dashboard with 4 predefined views",
-          "Data visualization system with 8 chart types",
-          "Complete documentation with usage guides for the development team"
+          "40% reduction in recurring task time",
+          "4 role-based customized views based on card sorting",
+          "Elimination of 3 redundant tools identified in research",
+          "UX metrics framework to measure post-launch adoption"
         ]
       }
     ]
   },
   "contact": {
     "label": "Contact",
-    "heading": "Let's work together",
-    "intro": "If you're looking for a UI/UX designer with a technical vision, or just want to chat about design and technology, feel free to reach out.",
+    "heading": "Let's talk UX",
+    "intro": "If you're looking for a UX Designer with a research focus and analytical mindset, or want to discuss research methodologies and user-centered design, reach out.",
     "emailLabel": "Email",
     "linkedinLabel": "LinkedIn",
     "nameLabel": "Name",
@@ -147,7 +147,7 @@
     "emailFieldLabel": "Email",
     "emailPlaceholder": "you@email.com",
     "messageLabel": "Message",
-    "messagePlaceholder": "Tell me about your project...",
+    "messagePlaceholder": "Tell me about your project or UX challenge...",
     "submitButton": "Send Message",
     "sending": "Sending...",
     "fieldRequired": "This field is required",
@@ -155,20 +155,20 @@
     "errorMessage": "Something went wrong. Please try again."
   },
   "footer": {
-    "copyright": "© 2026 — Designed with love and lots of coffee."
+    "copyright": "© 2026 — Designed with research and lots of coffee."
   },
   "projectDetail": {
     "back": "Back to portfolio",
     "overview": "Project overview",
-    "challenge": "The challenge",
-    "solution": "The solution",
-    "process": "Design process",
-    "tools": "Tools used",
-    "results": "Key results",
-    "ctaTitle": "Interested in this project?",
-    "ctaText": "If you'd like to know more about my design process or collaborate on a project, don't hesitate to reach out.",
+    "challenge": "The problem",
+    "solution": "The approach",
+    "process": "Research & design process",
+    "tools": "Methodologies used",
+    "results": "Results & impact",
+    "ctaTitle": "Interested in this case study?",
+    "ctaText": "If you'd like to know more about my research process or collaborate on a UX project, don't hesitate to reach out.",
     "ctaContact": "Contact",
     "ctaBack": "See all projects",
-    "footerText": "UI/UX Designer & Systems Analyst"
+    "footerText": "UX Designer & UX Researcher"
   }
 }

@@ -1,25 +1,25 @@
 "use client"
 
 import {
-  Figma,
-  Layout,
   Users,
-  Layers,
-  Monitor,
-  Database,
-  Code,
-  FileSearch,
-  PenTool,
+  TestTube,
+  Network,
+  Workflow,
+  LayoutTemplate,
+  BarChart3,
+  FileText,
+  ClipboardList,
+  TrendingUp,
   GitBranch,
 } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
-const designIcons = [Figma, Layout, Layers, Users, PenTool, FileSearch]
-const techIcons = [Code, Database, FileSearch, GitBranch]
+const designIcons = [Users, TestTube, Network, Workflow, LayoutTemplate, BarChart3]
+const techIcons = [ClipboardList, FileText, TrendingUp, GitBranch]
 
 const tools = [
-  "Figma", "Figjam", "Adobe XD", "Notion", "Miro",
-  "Jira", "Trello", "Git", "SQL", "Draw.io",
+  "Figma", "Figjam", "Miro", "Notion", "Maze",
+  "Optimal Workshop", "Dovetail", "Hotjar", "Google Analytics", "Jira",
 ]
 
 function SkillCard({

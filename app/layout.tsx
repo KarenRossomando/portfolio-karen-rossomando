@@ -17,8 +17,8 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Karen Rossomando | Diseñadora UI/UX & Analista de Sistemas',
-  description: 'Portfolio profesional de Karen Rossomando, diseñadora UI/UX con formación en Análisis de Sistemas. Especialista en Figma, wireframing, prototipado y experiencia de usuario.',
+  title: 'Karen Rossomando | UX Designer & UX Researcher',
+  description: 'Portfolio of Karen Rossomando, UX Designer and UX Researcher with a Systems Analysis background. Specialist in user research, usability testing, information architecture, and data-driven design solutions.',
   icons: {
     icon: [
       {

@@ -1,9 +1,9 @@
 "use client"
 
-import { Search, PenTool, Layers, TestTube } from "lucide-react"
+import { Search, Target, Lightbulb, CheckCircle } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
-const stepIcons = [Search, PenTool, Layers, TestTube]
+const stepIcons = [Search, Target, Lightbulb, CheckCircle]
 
 export function Process() {
   const { t } = useLanguage()
