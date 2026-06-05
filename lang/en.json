@@ -22,14 +22,16 @@
   },
   "about": {
     "label": "About Me",
-    "heading": "Research & Experience Strategy",
-    "p1": "As a UX Designer and Researcher, my focus is on deeply understanding users before designing any solution. I firmly believe that the best digital experiences are born from rigorous research and continuous validation.",
-    "p2": "My background as a Systems Analyst gives me a unique perspective: I can translate research insights into clear technical requirements, facilitating collaboration between design and development teams.",
-    "p3": "I specialize in uncovering real user needs through interviews, usability testing, and data analysis, transforming those findings into optimized user flows and effective information architectures.",
-    "card1Title": "Analytical Mindset",
-    "card1Text": "Systems Analyst (final year). Structured approach to problem-solving, data analysis, and requirements documentation.",
-    "card2Title": "User Research",
-    "card2Text": "Specialized in UX Research methodologies: interviews, usability testing, card sorting, heuristic analysis, and insight synthesis."
+    "heading": "Research, strategy and user experience",
+    "description": "My journey started in systems analysis, where I developed an analytical perspective for understanding complex problems. Today I apply that perspective to UX design, researching behaviors, identifying needs, and designing experiences that bring real value to people. I specialize in user research, information architecture, flow design, and solution validation through usability testing. I continue to grow in UX Design and strengthen my knowledge of user-centered methodologies.",
+    "card1Title": "Research",
+    "card1Text": "Interviews, benchmarking, and user analysis to understand real needs.",
+    "card2Title": "Strategy",
+    "card2Text": "Defining opportunities from insights and data to design with purpose.",
+    "card3Title": "Design",
+    "card3Text": "Wireframes, user flows, and user-centered information architecture.",
+    "card4Title": "Validation",
+    "card4Text": "Usability testing and iteration based on real user feedback."
   },
   "skills": {
     "label": "Skills",

@@ -22,14 +22,16 @@
   },
   "about": {
     "label": "Sobre mí",
-    "heading": "Investigación & Estrategia de Experiencia",
-    "p1": "Como UX Designer y Researcher, mi enfoque está en comprender profundamente a los usuarios antes de diseñar cualquier solución. Creo firmemente que las mejores experiencias digitales nacen de la investigación rigurosa y la validación continua.",
-    "p2": "Mi formación como Analista de Sistemas me brinda una perspectiva única: puedo traducir insights de investigación en requerimientos técnicos claros, facilitando la colaboración entre equipos de diseño y desarrollo.",
-    "p3": "Me especializo en descubrir las verdaderas necesidades de los usuarios a través de entrevistas, pruebas de usabilidad y análisis de datos, transformando esos hallazgos en flujos de usuario optimizados y arquitecturas de información efectivas.",
-    "card1Title": "Mentalidad Analítica",
-    "card1Text": "Analista de Sistemas (último año). Enfoque estructurado para la resolución de problemas, análisis de datos y documentación de requerimientos.",
-    "card2Title": "Investigación de Usuario",
-    "card2Text": "Especializada en metodologías de UX Research: entrevistas, pruebas de usabilidad, card sorting, análisis heurístico y síntesis de insights."
+    "heading": "Investigación, estrategia y experiencia de usuario",
+    "description": "Mi camino comenzó en el análisis de sistemas, donde desarrollé una mirada analítica para entender problemas complejos. Hoy aplico esa mirada al diseño UX, investigando comportamientos, identificando necesidades y diseñando experiencias que aporten valor real a las personas. Me especializo en investigación de usuarios, arquitectura de información, diseño de flujos y validación de soluciones mediante pruebas de usabilidad. Actualmente continúo formándome en UX Design y fortaleciendo mis conocimientos en metodologías centradas en el usuario.",
+    "card1Title": "Investigación",
+    "card1Text": "Entrevistas, benchmarking y análisis de usuarios para comprender necesidades reales.",
+    "card2Title": "Estrategia",
+    "card2Text": "Defino oportunidades a partir de insights y datos para diseñar con propósito.",
+    "card3Title": "Diseño",
+    "card3Text": "Wireframes, flujos de usuario y arquitectura de información centrada en el usuario.",
+    "card4Title": "Validación",
+    "card4Text": "Pruebas de usabilidad e iteración basada en feedback real de usuarios."
   },
   "skills": {
     "label": "Habilidades",
