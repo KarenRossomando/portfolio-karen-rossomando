@@ -54,12 +54,14 @@
   },
   "process": {
     "label": "Proceso",
-    "heading": "Mi enfoque de trabajo",
+    "heading": "Mi Proceso de Diseño UX",
+    "intro": "Un enfoque estructurado y centrado en el usuario que transforma problemas complejos en soluciones intuitivas a través de investigación y validación continua.",
     "steps": [
-      { "number": "01", "title": "Descubrimiento", "description": "Investigación de usuarios, análisis de stakeholders, benchmark competitivo y definición del problema a resolver." },
-      { "number": "02", "title": "Definición", "description": "Síntesis de insights, creación de personas, mapeo de user journeys y definición de la arquitectura de información." },
-      { "number": "03", "title": "Ideación", "description": "Workshops colaborativos, sketching, wireframes iterativos y prototipos para validación temprana con usuarios." },
-      { "number": "04", "title": "Validación", "description": "Pruebas de usabilidad, iteración basada en datos, documentación de hallazgos y handoff a desarrollo." }
+      { "number": "Paso 01", "title": "Investigar", "description": "Entrevistas con usuarios, encuestas, análisis competitivo y workshops con stakeholders para entender el espacio del problema." },
+      { "number": "Paso 02", "title": "Definir", "description": "Sintetizar insights en personas, mapas de journey y declaraciones claras del problema que guían las decisiones de diseño." },
+      { "number": "Paso 03", "title": "Idear", "description": "Brainstorming, sketching y exploración de múltiples soluciones a través de sesiones colaborativas de diseño." },
+      { "number": "Paso 04", "title": "Prototipar", "description": "Crear wireframes y prototipos interactivos para visualizar y comunicar conceptos de diseño." },
+      { "number": "Paso 05", "title": "Testear", "description": "Pruebas de usabilidad, A/B testing y refinamiento iterativo basado en feedback real de usuarios." }
     ]
   },
   "projects": {

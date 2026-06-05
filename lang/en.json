@@ -54,12 +54,14 @@
   },
   "process": {
     "label": "Process",
-    "heading": "My approach to UX",
+    "heading": "My UX Design Process",
+    "intro": "A structured, user-centered approach that transforms complex problems into intuitive solutions through continuous research and validation.",
     "steps": [
-      { "number": "01", "title": "Discovery", "description": "User research, stakeholder analysis, competitive benchmarking, and problem definition." },
-      { "number": "02", "title": "Definition", "description": "Insight synthesis, persona creation, user journey mapping, and information architecture definition." },
-      { "number": "03", "title": "Ideation", "description": "Collaborative workshops, sketching, iterative wireframes, and prototypes for early user validation." },
-      { "number": "04", "title": "Validation", "description": "Usability testing, data-driven iteration, findings documentation, and development handoff." }
+      { "number": "Step 01", "title": "Research", "description": "User interviews, surveys, competitive analysis, and stakeholder workshops to understand the problem space." },
+      { "number": "Step 02", "title": "Define", "description": "Synthesize insights into personas, journey maps, and clear problem statements that guide design decisions." },
+      { "number": "Step 03", "title": "Ideate", "description": "Brainstorming, sketching, and exploring multiple solutions through collaborative design sessions." },
+      { "number": "Step 04", "title": "Prototype", "description": "Create wireframes and interactive prototypes to visualize and communicate design concepts." },
+      { "number": "Step 05", "title": "Test", "description": "Usability testing, A/B testing, and iterative refinement based on real user feedback." }
     ]
   },
   "projects": {
